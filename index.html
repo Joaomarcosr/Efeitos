@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cards Animados</title>
+  </head>
+  <body>
+    <main class="container">
+        <section class="card add">
+            <div class="card-content">
+                <div class="container-img">
+                    <img src="./assets/facebook-logo.svg" alt="linkedin" />
+                </div>
+                <h3>Me adicione</h3>
+                <p>click for more information on my social networks</p>
+                <button>Saiba Mais</button>
+        </section>
+      </div>
+
+      <section class="card follow">
+            <div class="card-content">
+                <div class="container-img">
+                    <img src="./assets/GitHub_font_awesome.svg" alt="linkedin" />
+                </div>
+                <h3>Me siga</h3>
+                <p>click for more information on my social networks</p>
+                <button>Saiba Mais</button>
+        </section>
+      </div>
+
+      <section class="card contact">
+            <div class="card-content">
+                <div class="container-img">
+                    <img src="./assets/WhatsApp-logo.svg" alt="linkedin" />
+                </div>
+                <h3>Me chame</h3>
+                <p>click for more information on my social networks</p>
+                <button>Saiba Mais</button>
+        </section>
+      </div>
+    </main>
+
+
+    <script src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+      max:25,
+      speed:100,
+      glare: true,
+      "max-glare": 1,
+    });
+    </script>
+  </body>
+</html>
